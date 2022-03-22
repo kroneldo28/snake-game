@@ -20,6 +20,14 @@ class Snake:
         for position in STARTING_POSITION:
             self.add_part(position)
 
+    def reset(self):
+        for part in self.snake:
+            part.goto(1000, 1000)
+        self.snake.clear()
+        self.create_snake()
+        self.head = self.snake[0]
+        self.head.shape("turtle")
+
     def add_part(self, position):
         turtle = Turtle(shape="square")
         turtle.color("white")
