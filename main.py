@@ -50,4 +50,4 @@ while game_on:
 
 screen.exitonclick()
 
-
+# TODO: Increase speed a lil bit each time the snake eats food
